@@ -1,0 +1,277 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .container {
+     width: 1140px;
+     margin: 0 auto;
+ }
+
+ .header-bd{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+ }
+
+ .header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+
+ .header-top-left{
+     display: flex;
+     align-items: center;
+ }
+
+ .link{
+     display: flex;
+     align-items: center;
+     margin-right: 37px;
+     text-decoration: none;
+     color: #222222;
+ }
+
+ .link img{
+     margin-right: 13px;
+ }
+ 
+ .link p{
+    font-family: "Lato-light";
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.68px;
+ }
+
+ .link p span{
+    color: #f16d7f;
+ }
+
+ .search{
+    display: flex;
+ }
+
+ .browseBtn{
+     /*Стили Кнопки*/
+     border-radius: 3px 0 0 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #cdcdcc;
+    background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    /*Стили текста*/
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.35px;
+ }
+
+ .browseBtn :hover{
+    cursor: pointer;
+ }
+
+ .search input {
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    width: 280px;
+    padding-left: 14px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 32px;
+    text-align: left;
+    opacity: 0.8;
+ }
+
+ .search input:focus{
+    outline: none;
+ }
+
+ .searchImg{
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    width: 36px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    /* Text style for "," */
+    letter-spacing: 0.35px;
+ }
+
+ .searchImg:hover{
+    cursor: pointer;
+ }
+
+ .header-top-right{
+    display: flex;
+    align-items: center;
+ }
+
+ .header-top-right img:hover{
+   cursor: pointer;
+}
+
+ .header-top-right a{
+    margin-left: 26px;
+    background-color: #f16d7f;
+    padding: 2px 26px;
+    border: none;
+
+   font-family: "Lato-light";
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 32px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+   
+ }
+
+ .header-top-right a:hover{
+   background-color:#ffffff;
+   color: #f16d7f;
+   border: 1px solid #f16d7f;
+ }
+
+.header-nav{
+    width: 640px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-list{
+    font-family: "Lato";
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.menu-list li a{
+   text-decoration: none;
+   color: #222222;;
+}
+
+section{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.fullScrImg{
+   background-image: url(img/Man.png);
+   background-position: center;
+   width: 1900px;
+   height: 665px;
+   display: flex;
+   margin-bottom: 100px;
+}
+
+.RedLine{
+   height: 97px;
+   width: 12px;
+   background-color: #f16d7f;
+   align-self: flex-end;
+   margin-left: 235px;
+   margin-bottom: 8px;   
+   margin-right: 12px;
+}
+
+.imgText{
+   display: flex;
+   align-self: center;
+   font-family: "Lato";
+   font-size: 40px;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+}
+
+.imgText span:first-child{
+   font-size: 60px;
+   font-weight: bold;
+   letter-spacing: 1.5px;
+}
+.imgText span:nth-child(3n){
+   letter-spacing: 1px;
+}
+.imgText span:nth-child(4n){
+   color: #f16d7f;
+   letter-spacing: 1px;
+}
+
+.offers{
+   display: flex;
+   padding-bottom: 100px;
+}
+
+.offers-left{
+   display: flex;
+   flex-direction: column;
+   margin-right: 20px;
+}
+
+.offers-left-top{
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.offers-left-bottom{
+   position: relative;
+}
+
+.offers-right{
+   display: flex;
+   flex-direction: column;
+}
+
+.offers-right-top{
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.offers-right-bottom{
+   position: relative;
+}
+
+.offersText{
+   font-family: "Lato";
+   padding: 16px 20px;
+   position: absolute;
+   font-size: 18px;
+   font-weight: 400;
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: 0.45px;
+   color: #222222;
+
+   background-color: #ffffff;
+   top: 26px;
+}
+
+.offersText :last-child{
+   color: #f16d7f;
+   font-size: 30px;
+   letter-spacing: 0.75px;
+}
+
+@font-face{
+   font-family: "Lato";
+   src: url(fonts/Lato/Lato-Black.ttf) format("opentype");
+}
+
+@font-face{
+   font-family: "Lato-light";
+   src:url(fonts/Lato/Lato-Light.ttf) format("opentype");
+}
