@@ -3,6 +3,10 @@
      padding: 0;
  }
 
+@font-face{font-family: "Lato"; src: url(fonts/Lato/Lato-Black.ttf) format("opentype");}
+
+@font-face{font-family: "Lato-light"; src:url(fonts/Lato/Lato-Light.ttf) format("opentype");}
+
  .container {
      width: 1140px;
      margin: 0 auto;
@@ -69,9 +73,6 @@
     line-height: 32px;
     text-align: right;
     letter-spacing: 0.35px;
- }
-
- .browseBtn :hover{
     cursor: pointer;
  }
 
@@ -102,9 +103,6 @@
     text-align: center;
     /* Text style for "," */
     letter-spacing: 0.35px;
- }
-
- .searchImg:hover{
     cursor: pointer;
  }
 
@@ -161,6 +159,11 @@
 .menu-list li a{
    text-decoration: none;
    color: #222222;;
+}
+
+.menu-list li a:hover{
+   color: #f16d7f;
+   text-decoration: underline #f16d7f;
 }
 
 section{
@@ -266,12 +269,297 @@ section{
    letter-spacing: 0.75px;
 }
 
-@font-face{
-   font-family: "Lato";
-   src: url(fonts/Lato/Lato-Black.ttf) format("opentype");
+.featuredItemText{
+   font-size: 14px;
+   font-weight: 400;
+   text-align: center;
+   letter-spacing: 0.35px;
+   color: #9f9f9f;
+   margin-bottom: 60px;
 }
 
-@font-face{
-   font-family: "Lato-light";
-   src:url(fonts/Lato/Lato-Light.ttf) format("opentype");
+.featuredItemText h3{
+   color: #222222;
+   font-family: "Lato";
+   font-size: 30px;
+   font-weight: 700;
+   letter-spacing: 0.75px;
+   margin-bottom: 16px;
 }
+
+.itemCards{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.item{
+   text-decoration: none;
+   height: 364px;
+   margin-bottom: 40px;
+   padding-bottom: 20px;
+   position: relative;
+}
+
+.item:hover ::after{
+   content: '';
+   position: absolute;
+   width: 261px;
+   height: 280px;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgb(48, 48, 48);
+   opacity: 0.5;
+   z-index: 2;
+   background-image: url(img/ItemsImg/Add_to_cart.png);
+   background-repeat: no-repeat;
+   background-position: center top 40%;
+}
+
+.item:hover{
+   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+
+
+.item p{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-top: 20px;
+   margin-left: 13px;
+
+   color: #222222;
+   font-family: "Lato";
+   font-size: 13px;
+   font-weight: 400;
+   text-transform: uppercase;
+}
+
+.item p :last-child{
+   color: #f16d7f;
+   font-family: "Lato";
+   font-size: 16px;
+   font-weight: 700;
+   font-style: normal;
+   letter-spacing: normal;
+   line-height: normal;
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 17px;
+}
+.browseAllProduct{
+   display: flex;
+   justify-content: center;
+}
+
+.browseAllProduct a{
+   width: 212px;
+   padding: 18px 24px;
+   background-color: #f16d7f;
+   text-decoration: none;
+   box-sizing: border-box;
+   border: 1px solid #ffffff;
+
+   color: #ffffff;
+   font-family: "Lato-Light";
+   font-size: 16px;
+   font-weight: 700;
+   text-align: center;
+   letter-spacing: 0.4px;
+}
+
+.browseAllProduct a:hover{
+   background-color: #ffffff;
+   color: #f16d7f;
+   border: 1px solid #f16d7f;
+}
+
+
+.offerForWomen{
+   margin-top: 113px;
+   margin-bottom: 97px;
+   display: flex;
+   position: relative;
+}
+
+.offerWomenText{
+   position: absolute;
+   top: 136px;
+   left: 40px;
+
+   
+   color: #ffffff;
+   font-family: "Lato-Light";
+   font-size: 54px;
+   font-weight: 700;
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   line-height: 54px;
+}
+
+.offerWomenText :nth-child(2){
+   color: #f16d7f;
+}
+
+.offerWomenText :last-child{
+   font-size: 32px;
+   letter-spacing: 0.9px;
+}
+
+
+.description {
+   background-color: #222224;
+   height: 529px;
+   width: 100%;
+}
+
+.decriptionList {
+   list-style-type: none;
+   color: #fbfbfb;
+   padding-left: 30px;
+   padding-top: 48px;
+   padding-right: 40px;
+}
+
+.DescText{
+   font-family: "Lato-Light";
+   
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 24px;
+   letter-spacing: 0.35px;
+   }
+
+.DescText h4{
+   margin-bottom: 17px;
+
+   font-size: 20px;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+}
+
+.decriptionList li{
+   display: flex;
+   padding-bottom: 54px;
+}
+
+.decriptionList li img{
+   padding-right: 30px;
+   align-self: baseline;
+}
+
+
+.womenImg{
+   position: relative;
+}
+
+.hoverWomen::after{
+   content: " ";
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+   background-image: url(img/blinding.png);
+   background-repeat: no-repeat;
+   z-index: 2;
+   opacity: 0;
+   transition: .5s;
+}
+
+.hoverWomen:hover::after{
+   opacity: 1;
+}
+
+.shape{
+   position: absolute;
+}
+
+.subscribeBox-img{
+   background-image: url(img/subscribeImg.png);
+   height: 438px;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.subscribeBox{
+   
+   position: relative;
+   display: flex;
+   justify-content: space-around;
+}
+
+.subscribeBox-right{
+   display: flex;
+   margin-top: 111px;
+}
+
+.img-right{
+   margin-right: 28px;
+}
+
+.subscribe-right-text{
+   width: 386px;
+}
+
+.subscribeBox-left{
+   margin-top: 148px;
+}
+
+.Subscribe-left-text :first-child{
+   font-size: 24px;
+   letter-spacing: 0.6px;
+   text-transform: uppercase;
+}
+
+.Subscribe-left-text{
+   color: #222224;
+   font-family: "Lato";
+   font-size: 14px;
+   font-weight: 400;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 0.35px;
+   line-height: 24px;
+}
+
+.emailForm{
+   margin-top: 35px;
+}
+
+.emailForm input{
+   padding: 18px 148px 18px 28px;
+   border-radius: 23px 0px 0px 23px;
+   background-color: #e1e1e1;
+   border: 0px solid #000;
+   outline: none;
+
+   opacity: 0.67;
+   color: #222224;
+   font-family: "Lato-Light";
+   font-size: 14px;
+   font-weight: 900;
+   text-align: center;
+   letter-spacing: 0.35px;
+}
+
+.emailForm button{
+   padding: 18px 20px;
+   border-radius: 0 23px 23px 0;
+   background-color: #f16d7f;
+   border: 0px solid #000;
+   outline: none;
+   cursor: pointer;
+
+   color: #ffffff;
+   font-family: "Lato-Light";
+   font-size: 14px;
+   font-weight: 900;
+   text-align: center;
+   letter-spacing: 0.35px;
+}
+
+
