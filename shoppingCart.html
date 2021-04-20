@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fcceaaefc9.js" crossorigin="anonymous"></script>
     <title>SHOPPING CART</title>
 </head>
 
@@ -20,7 +21,8 @@
                     </a>
                     <form action="" class="search">
                         <details class="browseBtn">
-                            <summary class="browseBtn-header">Browse</summary>
+                            <summary class="browseBtn-header">Browse <i class="fas fa-caret-down browseBtn-caret"></i>
+                            </summary>
                             <div class="browseBtn-item">
                                 <h3>Women</h3>
                                 <ul class="browseBtn-list">
@@ -36,13 +38,13 @@
                                 </ul>
                             </div>
                         </details><input type="text" placeholder="Search for item..."><button class="searchImg"
-                            type="submit"></button>
+                            type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="header-top-right">
                     <div class="cartBox">
                         <details class="cart">
-                            <summary class="cart-header"><img src="img/Cart.svg" alt=""></summary>
+                            <summary class="cart-header"><i class="fas fa-shopping-cart"></i></summary>
                             <div class="cart-box">
                                 <div class="card-items">
                                     <div class="cart-item">
@@ -104,13 +106,13 @@
                                 </div>
                                 <div class="cart-buttons">
                                     <a href="chechout.html" class="cart-button">Checkout</a>
-                                    <a href="#" class="cart-button">Go to cart</a>
+                                    <a href="shoppingCart.html" class="cart-button">Go to cart</a>
                                 </div>
                             </div>
                         </details>
 
                     </div>
-                    <a href="#" class="my-account-link">My Account</a>
+                    <a href="#" class="my-account-link">My Account<i class="fas fa-caret-down my-account-caret"></i></a>
                 </div>
             </div>
         </div>
@@ -396,17 +398,94 @@
             </div>
         </div>
 
-        <div class="cartBox container">
-            <div class="cart-description">
+        <div class="cart-mainBox container">
+            <div class="cart-main-description cart-text">
                 <div class="cart-desc-left">
                     <p>product details</p>
                 </div>
-                <div class="cart-desc-right">
+                <div class="cart-main-desc-right">
                     <p>unite price</p>
                     <p>quantity</p>
                     <p>shipping</p>
                     <p>subtotal</p>
                     <p>action</p>
+                </div>
+            </div>
+            <div class="cart-main-item">
+                <div class="cart-main-img">
+                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
+                    <div class="cart-main-img-text">
+                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
+                        <p class="cart-main-item-text">Color: <span>Red</span></p>
+                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="cart-main-item-desc">
+                    <p>$150</p>
+                    <input type="text">
+                    <p>free</p>
+                    <p>$300</p>
+                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
+                </div>
+            </div>
+            <div class="cart-main-item">
+                <div class="cart-main-img">
+                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
+                    <div class="cart-main-img-text">
+                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
+                        <p class="cart-main-item-text">Color: <span>Red</span></p>
+                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="cart-main-item-desc">
+                    <p>$150</p>
+                    <input type="text">
+                    <p>free</p>
+                    <p>$300</p>
+                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
+                </div>
+            </div>
+            <div class="cart-main-item">
+                <div class="cart-main-img">
+                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
+                    <div class="cart-main-img-text">
+                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
+                        <p class="cart-main-item-text">Color: <span>Red</span></p>
+                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+                    </div>
+                </div>
+                <div class="cart-main-item-desc">
+                    <p>$150</p>
+                    <input type="text">
+                    <p>free</p>
+                    <p>$300</p>
+                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
+                </div>
+            </div>
+            <div class="button-clear-continue-box">
+                <button>cLEAR SHOPPING CART</button>
+                <button>cONTINUE sHOPPING</button>
+            </div>
+            <div class="cart-shippingAndCoupon">
+                <div class="cart-shipping-adress">
+                    <h4 class="cart-shipping-header">Shipping Adress</h4>
+                    <input type="text" placeholder="Bangladesh">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Postcode / Zip">
+                    <button class="cart-shipping-quote-btn">get a quote</button>
+                </div>
+                <div class="cart-coupon">
+                    <h4 class="cart-shipping-header">coupon discount</h4>
+                    <p>Enter your coupon code if you have one</p>
+                    <input type="text" placeholder="State">
+                    <button>Apply coupon</button>
+                </div>
+                <div class="cart-proseed">
+                    <div class="cart-proseed-text-box">
+                        <p>Sub total <span>$900</span></p>
+                        <h4>GRAND TOTAL <span>$900</span></h4>
+                    </div>
+                    <a href="chechout.html">proceed to checkout</a>
                 </div>
             </div>
         </div>
@@ -508,19 +587,19 @@
                     <div class="socialNet">
                         <ul class="social-list">
                             <li class="social-link">
-                                <a href=""></a>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li class="social-link">
-                                <a href=""></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
                             </li>
                             <li class="social-link">
-                                <a href=""></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                             <li class="social-link">
-                                <a href=""></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </li>
                             <li class="social-link">
-                                <a href=""></a>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
                             </li>
                         </ul>
                     </div>
