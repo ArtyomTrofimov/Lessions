@@ -387,6 +387,15 @@
 
 .cart-button:last-of-type {
   margin-bottom: 0;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  color: #4a4a4a;
+}
+
+.cart-button:last-of-type:hover {
+  border: 1px solid #f16d7f;
+  background-color: #ffffff;
+  color: #f16d7f;
 }
 
 .header-nav {
@@ -487,6 +496,10 @@
 .mega-item-list {
   list-style-type: none;
   padding: 0;
+}
+
+.margin-mega-menu {
+  margin-bottom: 18px;
 }
 
 .mega-item {
@@ -1148,27 +1161,19 @@ section {
   text-transform: uppercase;
 }
 
-.arrivals-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.arrivals-link {
+.breadcrumb-item a {
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   color: #636363;
-  display: block;
+  text-transform: uppercase;
 }
 
-.arrivals-list li:hover .arrivals-link {
+.breadcrumb-item a:hover {
   color: #f16d7f;
-  font-weight: 700;
+}
+
+.breadcrumb-item.active {
+  color: #f16d7f;
 }
 
 .checkoutBox {
@@ -2406,5 +2411,26 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+.products-pages-view-all {
+  border-radius: 3px;
+  border: solid 1px #ef5b70;
+  padding: 15px 46px;
+  cursor: pointer;
+}
+
+.products-pages-view-all a {
+  text-decoration: none;
+  color: #ef5b70;
+}
+
+.products-pages-view-all:hover {
+  background-color: #ef5b70;
+}
+
+.products-pages-view-all:hover a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -300,6 +300,14 @@
 
     &:last-of-type
         margin-bottom: 0
+        border: 1px solid #eaeaea
+        background-color: #ffffff
+        color: #4a4a4a
+
+        &:hover
+            border: 1px solid #f16d7f
+            background-color: #ffffff
+            color: #f16d7f
 
 .header-nav
     display: flex
@@ -380,6 +388,9 @@
 .mega-item-list
     list-style-type: none
     padding: 0
+
+.margin-mega-menu
+    margin-bottom: 18px
 
 .mega-item
     margin-right: 46px
@@ -888,24 +899,17 @@ section
     text-align: center
     text-transform: uppercase
 
-.arrivals-list
-    display: flex
-    list-style-type: none
-
-.arrivals-link
+.breadcrumb-item a
     text-decoration: none
-
     font-size: 14px
-    font-weight: 400
-    line-height: 20px
-    text-align: center
-    text-transform: uppercase
     color: #636363
-    display: block
+    text-transform: uppercase
 
-    .arrivals-list li:hover &
+    &:hover
         color: #f16d7f
-        font-weight: 700
+
+.breadcrumb-item.active
+    color: #f16d7f
 
 .checkoutBox
     margin-top: 89px
@@ -1814,5 +1818,20 @@ section
 .products-pages-box
     display: flex
     justify-content: space-between
+    margin-bottom: 110px
 
 .products-pages-view-all
+    border-radius: 3px
+    border: solid 1px #ef5b70
+    padding: 15px 46px
+    cursor: pointer
+
+    & a
+        text-decoration: none
+        color: #ef5b70
+
+    &:hover
+        background-color: #ef5b70
+
+        & a
+            color: #ffffff
