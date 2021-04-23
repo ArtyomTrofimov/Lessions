@@ -2079,7 +2079,7 @@ section {
           align-items: flex-end;
 }
 
-.cart-proseed a {
+.cart-proseed button {
   padding: 16px 40px;
   background-color: #f16d7f;
   border: 1px solid #f16d7f;
@@ -2090,14 +2090,14 @@ section {
   text-transform: uppercase;
 }
 
-.cart-proseed a:hover {
+.cart-proseed button:hover {
   background-color: #ffffff;
   border: 1px solid #f16d7f;
   color: #f16d7f;
   cursor: pointer;
 }
 
-.cart-proseed a:focus {
+.cart-proseed button:focus {
   outline: none;
 }
 
@@ -2197,6 +2197,7 @@ section {
 }
 
 .navigation-details-box summary h4 {
+  font-size: 14px;
   width: 80px;
   margin-right: 128px;
 }
@@ -2224,6 +2225,10 @@ section {
   padding-bottom: 10px;
 }
 
+.menu-item-box ul li h4 {
+  font-size: 14px;
+}
+
 .menu-item-box ul li:hover {
   color: #ef5b70;
   cursor: pointer;
@@ -2246,7 +2251,13 @@ section {
 
 .products-options div h4 {
   text-transform: uppercase;
+  font-weight: bold;
   margin-bottom: 24px;
+}
+
+.product-option-header {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .products-trending-list {
@@ -2383,6 +2394,7 @@ section {
 .products-sort-by p {
   padding: 10px;
   border-right: 1px solid #ebebeb;
+  margin-bottom: 0;
 }
 
 .products-sort-by-select {
