@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="noUIslider/nouislider.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fcceaaefc9.js" crossorigin="anonymous"></script>
-    <title>SHOPPING CART</title>
+    <title>PRODUCTS</title>
 </head>
 
 <body>
@@ -398,97 +399,255 @@
             </div>
         </div>
 
-        <div class="cart-mainBox container">
-            <div class="cart-main-description cart-text">
-                <div class="cart-desc-left">
-                    <p>product details</p>
-                </div>
-                <div class="cart-main-desc-right">
-                    <p>unite price</p>
-                    <p>quantity</p>
-                    <p>shipping</p>
-                    <p>subtotal</p>
-                    <p>action</p>
-                </div>
-            </div>
-            <div class="cart-main-item">
-                <div class="cart-main-img">
-                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
-                    <div class="cart-main-img-text">
-                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
-                        <p class="cart-main-item-text">Color: <span>Red</span></p>
-                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+        <div class="products-nav-box container">
+            <nav class="navigation">
+                <details class="navigation-details-box">
+                    <summary>
+                        <div class="red-line"></div>
+                        <h4>Category</h4>
+                    </summary>
+                    <div class="menu-item-box">
+                        <ul>
+                            <li>
+                                <h4>Accessories</h4>
+                            </li>
+                            <li>
+                                <h4>Bags</h4>
+                            </li>
+                            <li>
+                                <h4>Denim</h4>
+                            </li>
+                            <li>
+                                <h4>Hoodies & Sweatshirts</h4>
+                            </li>
+                            <li>
+                                <h4>Jackets & Coats</h4>
+                            </li>
+                            <li>
+                                <h4>Pants</h4>
+                            </li>
+                            <li>
+                                <h4>Polos</h4>
+                            </li>
+                            <li>
+                                <h4>Shirts</h4>
+                            </li>
+                            <li>
+                                <h4>Shoes</h4>
+                            </li>
+                            <li>
+                                <h4>Shorts</h4>
+                            </li>
+                            <li>
+                                <h4>Sweaters & Knits</h4>
+                            </li>
+                            <li>
+                                <h4>T-Shirts</h4>
+                            </li>
+                            <li>
+                                <h4>Tanks</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
+                <details class="navigation-details-box">
+                    <summary>
+                        <div class="red-line"></div>
+                        <h4>BRAND</h4>
+                    </summary>
+                    <div class="menu-item-box">
+
+                    </div>
+                </details>
+                <details class="navigation-details-box">
+                    <summary>
+                        <div class="red-line"></div>
+                        <h4>dESIGNER</h4>
+                    </summary>
+                    <div class="menu-item-box">
+
+                    </div>
+                </details>
+            </nav>
+            <div class="products-box">
+                <div class="products-options">
+                    <div class="products-options-trending">
+                        <h4>Trending now</h4>
+                        <div class="products-trending-list">
+                            <ul>
+                                <li>Bohemian</li>
+                                <li>Floral</li>
+                                <li>Lace</li>
+                                <li>Floral</li>
+                                <li>Lace</li>
+                                <li>Bohemian</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="products-options-size">
+                        <h4>Size</h4>
+                        <div class="products-size-box">
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="XXS">
+                                <label for="XXS">XXS</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="XS">
+                                <label for="XS">XS</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="S">
+                                <label for="S">S</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="M">
+                                <label for="M">M</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="L">
+                                <label for="L">L</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="XL">
+                                <label for="XL">XL</label>
+                            </div>
+                            <div class="custom-checkbox">
+                                <input type="checkbox" name="" id="XXL">
+                                <label for="XXL">XXL</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-options-price">
+                        <h4>pRICE</h4>
+                        <div class="products-slider" id="steps-slider"></div>
+                        <div class="products-from-to-price">
+                            <input type="text" id="input-with-keypress-0">
+                            <input type="text" id="input-with-keypress-1">
+                        </div>
                     </div>
                 </div>
-                <div class="cart-main-item-desc">
-                    <p>$150</p>
-                    <input type="text">
-                    <p>free</p>
-                    <p>$300</p>
-                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
-                </div>
-            </div>
-            <div class="cart-main-item">
-                <div class="cart-main-img">
-                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
-                    <div class="cart-main-img-text">
-                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
-                        <p class="cart-main-item-text">Color: <span>Red</span></p>
-                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+                <div class="products-sort-by-box">
+                    <div class="products-sort-by">
+                        <p>Sort By</p>
+                        <select class="products-sort-by-select" name="" id="">
+                            <option value="">Name</option>
+                            <option value="">Price high to low</option>
+                            <option value="">Price low to high</option>
+                            <option value="" selected>What's new</option>
+                        </select>
+                    </div>
+                    <div class="products-sort-by">
+                        <p>Show</p>
+                        <select class="products-sort-by-select" name="" id="">
+                            <option value="">09</option>
+                            <option value="">12</option>
+                            <option value="">15</option>
+                        </select>
                     </div>
                 </div>
-                <div class="cart-main-item-desc">
-                    <p>$150</p>
-                    <input type="text">
-                    <p>free</p>
-                    <p>$300</p>
-                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
-                </div>
-            </div>
-            <div class="cart-main-item">
-                <div class="cart-main-img">
-                    <img src="img/shoppingCartImg/shoppingCartImg1.png" alt="">
-                    <div class="cart-main-img-text">
-                        <p class="cart-main-item-header cart-text">Mango People T-shirt</p>
-                        <p class="cart-main-item-text">Color: <span>Red</span></p>
-                        <p class="cart-main-item-text">Size: <span>Xll</span></p>
+                <div class="products-cards-box">
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="itemCard">
+                        <a href="#" class="item">
+                            <img src="img/ItemsImg/Image.png" alt="">
+                            <p><span> Mango People T-shirt</span><span>$52.00</span></p>
+                        </a>
+                        <div class="item-hoverBG"></div>
+                        <div class="item-buy-linkBox">
+                            <a href="#" class="item-buy-link"><img src="img/ItemsImg/Add_to_cart.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-                <div class="cart-main-item-desc">
-                    <p>$150</p>
-                    <input type="text">
-                    <p>free</p>
-                    <p>$300</p>
-                    <p class="cart-item-delete"><i class="fas fa-times-circle"></i></p>
-                </div>
-            </div>
-            <div class="button-clear-continue-box">
-                <button>cLEAR SHOPPING CART</button>
-                <button>cONTINUE sHOPPING</button>
-            </div>
-            <div class="cart-shippingAndCoupon">
-                <div class="cart-shipping-adress">
-                    <h4 class="cart-shipping-header">Shipping Adress</h4>
-                    <input type="text" placeholder="Bangladesh">
-                    <input type="text" placeholder="State">
-                    <input type="text" placeholder="Postcode / Zip">
-                    <button class="cart-shipping-quote-btn">get a quote</button>
-                </div>
-                <div class="cart-coupon">
-                    <h4 class="cart-shipping-header">coupon discount</h4>
-                    <p>Enter your coupon code if you have one</p>
-                    <input type="text" placeholder="State">
-                    <button>Apply coupon</button>
-                </div>
-                <div class="cart-proseed">
-                    <div class="cart-proseed-text-box">
-                        <p>Sub total <span>$900</span></p>
-                        <h4>GRAND TOTAL <span>$900</span></h4>
+                <div class="products-pages-box">
+                    <div>
+
                     </div>
-                    <a href="chechout.html">proceed to checkout</a>
+                    <div class="products-pages-view-all">
+
+                    </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <footer>
@@ -596,8 +755,93 @@
                 </div>
             </div>
     </footer>
+    <script src="noUIslider/nouislider.js"></script>
+    <script src="noUIslider/wNumb.js"></script>
     <script>
-        document.getElementById('nowYear').innerText = new Date().getFullYear();
+        var stepsSlider = document.getElementById('steps-slider');
+        var input0 = document.getElementById('input-with-keypress-0');
+        var input1 = document.getElementById('input-with-keypress-1');
+        var inputs = [input0, input1];
+
+        noUiSlider.create(stepsSlider, {
+            start: [50, 400],
+            connect: true,
+            range: {
+                'min': [0],
+                'max': 1000
+            },
+            format: wNumb({
+                decimals: 3,
+                thousand: '.',
+                prefix: '$'
+            })
+        });
+
+        stepsSlider.noUiSlider.on('update', function (values, handle) {
+            inputs[handle].value = values[handle];
+        });
+
+        inputs.forEach(function (input, handle) {
+
+            input.addEventListener('change', function () {
+                stepsSlider.noUiSlider.setHandle(handle, this.value);
+            });
+
+            input.addEventListener('keydown', function (e) {
+
+                var values = stepsSlider.noUiSlider.get();
+                var value = Number(values[handle]);
+
+                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+                var steps = stepsSlider.noUiSlider.steps();
+
+                // [down, up]
+                var step = steps[handle];
+
+                var position;
+
+                // 13 is enter,
+                // 38 is key up,
+                // 40 is key down.
+                switch (e.which) {
+
+                    case 13:
+                        stepsSlider.noUiSlider.setHandle(handle, this.value);
+                        break;
+
+                    case 38:
+
+                        // Get step to go increase slider value (up)
+                        position = step[1];
+
+                        // false = no step is set
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        // null = edge of slider
+                        if (position !== null) {
+                            stepsSlider.noUiSlider.setHandle(handle, value + position);
+                        }
+
+                        break;
+
+                    case 40:
+
+                        position = step[0];
+
+                        if (position === false) {
+                            position = 1;
+                        }
+
+                        if (position !== null) {
+                            stepsSlider.noUiSlider.setHandle(handle, value - position);
+                        }
+
+                        break;
+                }
+            });
+        });
     </script>
 </body>
 

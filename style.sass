@@ -1617,3 +1617,202 @@ section
         & span
             color: #f16d7f
             margin-left: 10px
+
+.products-nav-box
+    display: flex
+    margin-top: 71px
+
+.navigation
+    width: 243px
+    margin-right: 50px
+
+.red-line
+    width: 5px
+    height: 37px
+    background-color: #ef5b70
+    margin-right: 11px
+
+.navigation-details-box
+    margin-bottom: 18px
+
+    & summary
+        display: flex
+        border-bottom: 1px solid #ebebeb
+        align-items: center
+
+        font-size: 14px
+        color: #6f6e6e
+        text-transform: uppercase
+
+        &:hover
+            cursor: pointer
+
+        &::marker
+            display: none
+
+        &::after
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            content: "\f0d7"
+            color: #6f6e6e
+
+        &:focus
+            outline: none
+
+        & h4
+            width: 80px
+            margin-right: 128px
+
+.navigation-details-box[open]
+
+    & summary
+        color: #ef5b70
+
+        &::after
+            font-family: "Font Awesome 5 Free"
+            font-weight: 900
+            content: "\f0d8"
+            color: #ef5b70
+
+.menu-item-box
+
+    & ul
+        list-style-type: none
+        font-size: 14px
+        color: #6f6e6e
+        padding: 22px
+
+        & li
+            display: block
+            padding-bottom: 10px
+
+            &:hover
+                color: #ef5b70
+                cursor: pointer
+
+.products-box
+    width: 100%
+
+.products-options
+    display: flex
+    justify-content: space-between
+    color: #6f6e6e
+    margin-bottom: 41px
+
+    & div h4
+        text-transform: uppercase
+        margin-bottom: 24px
+
+.products-trending-list
+    width: 190px
+
+    & ul
+        list-style-type: none
+        display: flex
+        flex-wrap: wrap
+
+        & li
+
+            &::after
+                content: "|"
+                color: #dfdfdf
+                margin: 0 5px
+
+            &:last-of-type::after
+                display: none
+
+.products-options-size
+    width: 265px
+
+.products-size-box
+    display: flex
+    flex-wrap: wrap
+
+.custom-checkbox
+
+    margin-right: 23px
+
+    & input
+        position: absolute
+        z-index: -1
+        opacity: 0
+
+        &+label
+            display: inline-flex
+            align-items: center
+            user-select: none
+
+            &::before
+                content: ''
+                display: inline-block
+                width: 13px
+                height: 13px
+                flex-shrink: 0
+                flex-grow: 0
+                border: 1px solid #ebebeb
+                margin-right: 0.5em
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: 80%
+
+        &:checked+label::before
+            background-image: url(img/ProductsImg/check-solid.svg)
+
+    &:hover
+        color: #ef5b70
+
+.products-options-price
+    width: 262px
+
+.products-from-to-price
+    display: flex
+    justify-content: space-between
+
+    & input
+        width: 100px
+        border: 0px solid #000
+
+        font-size: 14px
+        color: #6f6e6e
+
+        &:focus
+            outline: none
+
+.products-slider
+    margin-bottom: 21px
+
+.products-sort-by-box
+    background-color: #f3f3f3
+    padding: 10px 0 10px 9px
+    display: flex
+    font-size: 14px
+    color: #6f6e6e
+    margin-bottom: 48px
+
+.products-sort-by
+    display: flex
+    margin-right: 10px
+    border: solid 1px #ebebeb
+    background-color: #ffffff
+
+    & p
+        padding: 10px
+        border-right: 1px solid #ebebeb
+
+.products-sort-by-select
+    outline: none
+    border: 0px solid #000
+    font-size: 14px
+    color: #6f6e6e
+    padding: 10px
+
+.products-cards-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.products-pages-box
+    display: flex
+    justify-content: space-between
+
+.products-pages-view-all
