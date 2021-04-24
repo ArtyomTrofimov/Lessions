@@ -527,7 +527,6 @@ section
 
     &Card
         margin-bottom: 40px
-        padding-bottom: 20px
         position: relative
 
     &Card:hover .item-hoverBG
@@ -566,24 +565,28 @@ section
         display: flex
         flex-direction: column
         align-items: flex-start
-        margin-top: 20px
-        margin-left: 13px
+        padding-top: 20px
+        padding-left: 13px
+        padding-bottom: 20px
+        margin-bottom: 0
 
-        color: #222222
-        font-size: 13px
-        font-weight: 400
-        text-transform: uppercase
+        & span
+            display: block
+            color: #222222
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase
 
-    & p :last-child
-        color: #f16d7f
-        font-size: 16px
-        font-weight: 700
-        font-style: normal
-        letter-spacing: normal
-        line-height: normal
-        text-align: center
-        text-transform: uppercase
-        margin-top: 17px
+            &:last-child
+                color: #f16d7f
+                font-size: 16px
+                font-weight: 700
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+                text-align: center
+                text-transform: uppercase
+                margin-top: 17px
 
 .browseAllProduct
     display: flex
@@ -1717,14 +1720,19 @@ section
     font-weight: bold
 
 .products-trending-list
-    width: 190px
+    width: 220px
 
     & ul
         list-style-type: none
         display: flex
         flex-wrap: wrap
+        margin-bottom: 0
 
         & li
+
+            &:hover
+                cursor: pointer
+                color: #ef5b70
 
             &::after
                 content: "|"
@@ -1742,7 +1750,6 @@ section
     flex-wrap: wrap
 
 .custom-checkbox
-
     margin-right: 23px
 
     & input
@@ -1754,6 +1761,10 @@ section
             display: inline-flex
             align-items: center
             user-select: none
+
+            &:hover
+                cursor: pointer
+                color: #ef5b70
 
             &::before
                 content: ''
@@ -1770,9 +1781,6 @@ section
 
         &:checked+label::before
             background-image: url(img/ProductsImg/check-solid.svg)
-
-    &:hover
-        color: #ef5b70
 
 .products-options-price
     width: 262px
@@ -1829,6 +1837,40 @@ section
     display: flex
     justify-content: space-between
     margin-bottom: 110px
+
+.products-pages-paginator
+    width: 261px
+    border: solid 1px #ebebeb
+    padding: 15px 16px
+    display: flex
+    justify-content: space-between
+
+    & span
+        font-size: 16px
+        font-weight: 600
+        color: #c4c4c4
+
+        &:hover
+            color: #ef5b70
+            cursor: pointer
+
+.products-page-link
+    text-decoration: none
+    font-size: 16px
+    font-weight: 600
+    color: #c4c4c4
+
+    &:hover
+        color: #ef5b70
+
+    &-current
+        color: #ef5b70
+        text-decoration: none
+        font-size: 16px
+        font-weight: 600
+
+        &:hover
+            color: #ef5b70
 
 .products-pages-view-all
     border-radius: 3px

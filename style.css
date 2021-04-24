@@ -691,7 +691,6 @@ section {
 
 .itemCard {
   margin-bottom: 40px;
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -747,15 +746,21 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 20px;
-  margin-left: 13px;
+  padding-top: 20px;
+  padding-left: 13px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.item p span {
+  display: block;
   color: #222222;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.item p :last-child {
+.item p span:last-child {
   color: #f16d7f;
   font-size: 16px;
   font-weight: 700;
@@ -2261,7 +2266,7 @@ section {
 }
 
 .products-trending-list {
-  width: 190px;
+  width: 220px;
 }
 
 .products-trending-list ul {
@@ -2271,6 +2276,12 @@ section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.products-trending-list ul li:hover {
+  cursor: pointer;
+  color: #ef5b70;
 }
 
 .products-trending-list ul li::after {
@@ -2318,6 +2329,11 @@ section {
           user-select: none;
 }
 
+.custom-checkbox input + label:hover {
+  cursor: pointer;
+  color: #ef5b70;
+}
+
 .custom-checkbox input + label::before {
   content: '';
   display: inline-block;
@@ -2337,10 +2353,6 @@ section {
 
 .custom-checkbox input:checked + label::before {
   background-image: url(img/ProductsImg/check-solid.svg);
-}
-
-.custom-checkbox:hover {
-  color: #ef5b70;
 }
 
 .products-options-price {
@@ -2424,6 +2436,51 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 110px;
+}
+
+.products-pages-paginator {
+  width: 261px;
+  border: solid 1px #ebebeb;
+  padding: 15px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products-pages-paginator span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c4c4c4;
+}
+
+.products-pages-paginator span:hover {
+  color: #ef5b70;
+  cursor: pointer;
+}
+
+.products-page-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c4c4c4;
+}
+
+.products-page-link:hover {
+  color: #ef5b70;
+}
+
+.products-page-link-current {
+  color: #ef5b70;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.products-page-link-current:hover {
+  color: #ef5b70;
 }
 
 .products-pages-view-all {
